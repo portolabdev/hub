@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE ETERNALS - Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- custom css file -->
+   <link rel="stylesheet" href="port.css"/>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    <!-- Font Awesome for AI Resume Builder -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- jsPDF library for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #2b12e7"
+          >THE ETERNALS</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center">
+          <!-- here data-aos is used for adding aos animation  -->
+          <div class="col-12 col-md-6 text-center text-md-start" data-aos="slide-right">
+            <h2 style="color: #3b3378">
+              Hello! We are <br /><span class="c-orange">THE ETERNALS</span>
+            </h2>
+            <p class="text-muted">
+              We are a group of enthusiastic B.Tech 2nd-year students, embarking on an exciting
+              journey to explore the dynamic world of Web Development. With a passion for 
+              learning, we aim to bring our knowledge to life through innovative projects
+              and creative solutions.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Hire Us
+            </button>
+            <a href="#service" class="link ms-4">See Our Work</a>
+          </div>
+          <div class="col-12 col-md-4 d-none d-md-block" data-aos="slide-left">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="img-fluid rounded shadow" alt="Team Photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here --
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-12 col-md-5 skill-with-progress" data-aos="slide-right">
+            <div class="row justify-content-evenly">
+              <div class="col-10 col-md-6 mb-4">
+                <div class="progress-card">
+                  <div class="circular-progress html-css">
+                    <span class="progress-value html-progress">0%</span>
+                  </div>
+                  <br />
+                  <span class="text">HTML</span>
+                </div>
+              </div>
+              <div class="col-10 col-md-6 mb-4">
+                <div class="progress-card">
+                  <div class="circular-progress javascript">
+                    <span class="progress-value javascript-progress">0%</span>
+                  </div>
+                  <br />
+                  <span class="text">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-10 col-md-6 mb-4">
+                <div class="progress-card">
+                  <div class="circular-progress CSS">
+                    <span class="progress-value CSS-progress">0%</span>
+                  </div>
+                  <br>
+                  <span class="text">CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 skill-detail" data-aos="slide-left">
+            <div class="heading mt-5 mt-md-3">
+              <small>Our Skills</small>
+              <h3>Beautiful & Unique Digital Experiences</h3>
+              <p class="text-muted">
+                Our team combines technical expertise with creative thinking to 
+                deliver digital solutions that not only look great but also perform 
+                exceptionally well across all devices and platforms.
+              </p>
+              <p class="text-muted">
+                We stay updated with the latest industry trends and technologies to 
+                ensure our clients receive modern, efficient, and scalable solutions.
+              </p>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" id="build-resume-btn">
+                Build Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+    <!-- Team Section -->
+    <section class="team py-5" id="team">
+      <div class="container">
+        <div class="heading text-center">
+          <small>Meet Our Team</small>
+          <h3>The Creative Minds Behind THE ETERNALS</h3>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-3 col-sm-6 col-10 mb-4" data-aos="fade-up">
+            <div class="team-member">
+              <img src="images/ishan.jpg" class="team-photo" alt="Team Member">
+              <h4>Ishan</h4>
+              <p class="text-muted">Frontend Developer</p>
+              <div class="social-links">
+                <button><i class="bi bi-linkedin"></i></button>
+                <button><i class="bi bi-github"></i></button>
+                <button><i class="bi bi-twitter"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-10 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <img src="images/CR.jpg"class="team-photo" alt="Team Member">
+              <h4> Prakhar</h4>
+              <p class="text-muted">UI/UX Designer</p>
+              <div class="social-links">
+                <button><i class="bi bi-linkedin"></i></button>
+                <button><i class="bi bi-github"></i></button>
+                <button><i class="bi bi-twitter"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-10 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="team-photo" alt="Team Member">
+              <h4></h4>
+              <p class="text-muted">Backend Developer</p>
+              <div class="social-links">
+                <button><i class="bi bi-linkedin"></i></button>
+                <button><i class="bi bi-github"></i></button>
+                <button><i class="bi bi-twitter"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-10 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" class="team-photo" alt="Team Member">
+              <h4> Singh</h4>
+              <p class="text-muted">Full Stack Developer</p>
+              <div class="social-links">
+                <button><i class="bi bi-linkedin"></i></button>
+                <button><i class="bi bi-github"></i></button>
+                <button><i class="bi bi-twitter"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Resume Builder Modal -->
+    <div id="resume-builder-modal" class="resume-builder-modal">
+      <div class="resume-builder-content">
+        <span class="close-resume-builder">&times;</span>
+        
+        <header>
+          <h1>AI Resume Builder</h1>
+          <p class="subtitle">Create a professional resume in minutes with AI-powered suggestions</p>
+          <span class="ai-badge"><i class="fas fa-robot"></i> Powered by AI</span>
+        </header>
+
+        <div class="main-content">
+          <div class="form-section">
+            <div class="tabs">
+              <div class="tab active" data-tab="personal">Personal Info</div>
+              <div class="tab" data-tab="experience">Experience</div>
+              <div class="tab" data-tab="education">Education</div>
+              <div class="tab" data-tab="skills">Skills</div>
+            </div>
+
+            <div class="tab-content active" id="personal-tab">
+              <h2 class="section-title"><i class="fas fa-user"></i> Personal Information</h2>
+              
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="John Doe">
+              </div>
+              
+              <div class="form-group">
+                <label for="jobTitle">Professional Title</label>
+                <input type="text" id="jobTitle" placeholder="Software Engineer">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john.doe@example.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="+91-911-911-911">
+              </div>
+              
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Motihari">
+              </div>
+              
+              <div class="form-group">
+                <label for="summary">Professional Summary</label>
+                <textarea id="summary" placeholder="Experienced software engineer with 5+ years in web development..."></textarea>
+              </div>
+              
+              <button class="btn btn-ai btn-full" id="ai-summary">
+                <i class="fas fa-magic"></i> Generate Summary with AI
+              </button>
+            </div>
+
+            <div class="tab-content" id="experience-tab">
+              <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+              
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Tech Solutions Inc.">
+              </div>
+              
+              <div class="form-group">
+                <label for="jobRole">Job Title</label>
+                <input type="text" id="jobRole" placeholder="Senior Developer">
+              </div>
+              
+              <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="month" id="startDate">
+              </div>
+              
+              <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="month" id="endDate">
+              </div>
+              
+              <div class="form-group">
+                <label for="jobDescription">Job Description</label>
+                <textarea id="jobDescription" placeholder="Describe your responsibilities and achievements..."></textarea>
+              </div>
+              
+              <button class="btn" id="addExperience">
+                <i class="fas fa-plus"></i> Add Experience
+              </button>
+              
+              <div id="experienceList"></div>
+              
+              <div class="ai-suggestions">
+                <div class="suggestion-title">
+                  <i class="fas fa-lightbulb"></i> AI Suggestion
+                </div>
+                <p class="suggestion-text">Use action verbs and quantify achievements. Instead of "Responsible for team management", try "Managed a team of 5 developers, increasing productivity by 20%".</p>
+              </div>
+            </div>
+
+            <div class="tab-content" id="education-tab">
+              <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+              
+              <div class="form-group">
+                <label for="institution">Institution</label>
+                <input type="text" id="institution" placeholder="University of Technology">
+              </div>
+              
+              <div class="form-group">
+                <label for="degree">Degree</label>
+                <input type="text" id="degree" placeholder="Bachelor of Science in Computer Science">
+              </div>
+              
+              <div class="form-group">
+                <label for="gradYear">Graduation Year</label>
+                <input type="month" id="gradYear">
+              </div>
+              
+              <div class="form-group">
+                <label for="gpa">GPA (Optional)</label>
+                <input type="text" id="gpa" placeholder="3.8">
+              </div>
+              
+              <button class="btn" id="addEducation">
+                <i class="fas fa-plus"></i> Add Education
+              </button>
+              
+              <div id="educationList"></div>
+            </div>
+
+            <div class="tab-content" id="skills-tab">
+              <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
+              
+              <div class="form-group">
+                <label for="skillInput">Add Skill</label>
+                <input type="text" id="skillInput" placeholder="JavaScript, Project Management, etc.">
+              </div>
+              
+              <button class="btn" id="addSkill">
+                <i class="fas fa-plus"></i> Add Skill
+              </button>
+              
+              <div class="skills-list" id="skillsContainer">
+                <!-- Skills will be added here dynamically -->
+              </div>
+              
+              <div class="ai-suggestions">
+                <div class="suggestion-title">
+                  <i class="fas fa-lightbulb"></i> AI Suggestion
+                </div>
+                <p class="suggestion-text">Include a mix of technical and soft skills. Group related skills together (e.g., Programming Languages, Tools, Methodologies).</p>
+              </div>
+            </div>
+
+            <div class="action-buttons">
+              <button class="btn btn-ai" id="ai-review">
+                <i class="fas fa-robot"></i> AI Resume Review
+              </button>
+              <button class="btn" id="downloadPdf">
+                <i class="fas fa-download"></i> Download PDF
+              </button>
+              <button class="btn" id="resetForm">
+                <i class="fas fa-redo"></i> Reset Form
+              </button>
+            </div>
+          </div>
+
+          <div class="preview-section">
+            <h2 class="section-title"><i class="fas fa-eye"></i> Resume Preview</h2>
+            <div class="resume-preview" id="resumePreview">
+              <!-- Resume content will be generated here -->
+              <div class="resume-header">
+                <div class="resume-name">Your Name</div>
+                <div class="resume-title">Your Professional Title</div>
+                <div class="resume-contact">
+                  <span>email@example.com</span>
+                  <span>(123) 456-7890</span>
+                  <span>City, State</span>
+                </div>
+              </div>
+              
+              <div class="resume-section">
+                <div class="resume-section-title">Professional Summary</div>
+                <p>Your professional summary will appear here. Write a brief overview of your experience, skills, and career goals.</p>
+              </div>
+              
+              <div class="resume-section">
+                <div class="resume-section-title">Work Experience</div>
+                <p>Your work experience will be listed here.</p>
+              </div>
+              
+              <div class="resume-section">
+                <div class="resume-section-title">Education</div>
+                <p>Your education history will be listed here.</p>
+              </div>
+              
+              <div class="resume-section">
+                <div class="resume-section-title">Skills</div>
+                <p>Your skills will be listed here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="container">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-4 col-10 mb-4" data-aos="slide-right">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="img-fluid rounded shadow" alt="Testimonials" />
+          </div>
+          <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+            <div class="heading">
+              <small>Testimonials</small>
+              <h3>Happy Clients Feedback</h3>
+              <!-- here we will use carousel element from bootstrap -->
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-evenly">
+                      <div class="col-2 text-center">
+                        <i class="bi bi-quote display-4 text-muted"></i>
+                      </div>
+                      <div class="col-10">
+                        <p class="text-muted">
+                          Working with THE ETERNALS was a fantastic experience. They delivered 
+                          our website ahead of schedule and the quality exceeded our expectations. 
+                          Highly recommended for any web development project.
+                        </p>
+                        <h4>Sarah Johnson</h4>
+                        <p class="text-muted"> TechSolutions </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-evenly">
+                      <div class="col-2 text-center">
+                        <i class="bi bi-quote display-4 text-muted"></i>
+                      </div>
+                      <div class="col-10">
+                        <p class="text-muted">
+                          The team at THE ETERNALS transformed our outdated website into a modern, 
+                          responsive platform that has significantly improved our user engagement. 
+                          Their attention to detail is remarkable.
+                        </p>
+                        <h4>Michael Chen</h4>
+                        <p class="text-muted"> Global Retail</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-evenly">
+                      <div class="col-2 text-center">
+                        <i class="bi bi-quote display-4 text-muted"></i>
+                      </div>
+                      <div class="col-10">
+                        <p class="text-muted">
+                          As a startup, we needed a cost-effective but professional web presence. 
+                          THE ETERNALS delivered exactly what we needed and provided excellent 
+                          ongoing support. Great value for money!
+                        </p>
+                        <h4>Priya Patel</h4>
+                        <p class="text-muted"> InnovateStart</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="nextprev-btn rounded-pill prev-btn"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <i class="bi bi-arrow-left-circle-fill prev"></i>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="nextprev-btn rounded-pill next-btn"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <i class="bi bi-arrow-right-circle-fill next"></i>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+   
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="heading text-center">
+          <small>Get in Touch</small>
+          <h3>Any Questions? Feel Free to Contact</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+          <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+            <div class="row justify-content-evenly mb-4">
+              <div class="col-1">
+                <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+              </div>
+              <div class="col-11">
+                <h5>Address</h5>
+                <p>121 King Street, Motihari, Gorakhpur</p>
+              </div>
+            </div>
+            <div class="row justify-content-evenly mb-4">
+              <div class="col-1">
+                <i class="bi bi-telephone-fill text-primary fs-4"></i>
+              </div>
+              <div class="col-11">
+                <h5>Phone</h5>
+                <p>+91 911 911 9111</p>
+              </div>
+            </div>
+            <div class="row justify-content-evenly mb-4">
+              <div class="col-1">
+                <i class="bi bi-envelope-fill text-primary fs-4"></i>
+              </div>
+              <div class="col-11">
+                <h5>Email</h5>
+                <p>theeternals.dev@gmail.com</p>
+              </div>
+            </div>
+            <div class="row justify-content-evenly mb-4">
+              <div class="col-1">
+                <i class="bi bi-globe-americas text-primary fs-4"></i>
+              </div>
+              <div class="col-11">
+                <h5>Website</h5>
+                <p>www.theeternals.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+            <div class="contact-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneInput"
+                  placeholder="Mobile No."
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  placeholder="Message"
+                  rows="5"
+                ></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" id="submitContact">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <div class="container">
+        <h3 class="text-white pt-4" data-aos="fade-up">THE ETERNALS</h3>
+        <h4 class="text-pink pt-4" data-aos="fade-up">Web Development Team</h4>
+        <div class="link-group mt-5" data-aos="fade-up">
+          <a href="#home">Home</a>
+          <div class="vr d-none d-md-inline"></div>
+          <a href="#about">About</a>
+          <div class="vr d-none d-md-inline"></div>
+          <a href="#team">Team</a>
+          <div class="vr d-none d-md-inline"></div>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-links mt-5" data-aos="fade-up">
+          <button class="rounded-pill">
+            <i class="bi bi-linkedin"></i>
+          </button>
+          <button class="rounded-pill">
+            <i class="bi bi-github"></i>
+          </button>
+          <button class="rounded-pill">
+            <i class="bi bi-twitter"></i>
+          </button>
+          <button class="rounded-pill">
+            <i class="bi bi-instagram"></i>
+          </button>
+        </div>
+        <hr class="text-muted my-4" />
+
+        <p>Copyright 2023 THE ETERNALS | All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    
+   <script src="port.js"></script>
+  </body>
+</html>
